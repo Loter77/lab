@@ -1,6 +1,5 @@
 public class Task6 {
 
-    // Простой класс для примера
     static class Student {
         String name;
         int age;
@@ -16,9 +15,8 @@ public class Task6 {
         }
     }
 
-    // Сортировка массива объектов по ключу (пузырьковая)
     public static Student[] getSortedArray(Student[] array, String key) {
-        Student[] result = array.clone();  // копируем массив
+        Student[] result = array.clone();  
 
         int n = result.length;
         for (int i = 0; i < n - 1; i++) {
