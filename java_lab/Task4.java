@@ -1,7 +1,6 @@
 import java.math.BigInteger;
 
 public class Task4 {
-    // Возвращает n-ое число Фибоначчи (n <= 1000)
     public static BigInteger fibb(int n) {
         if (n == 0) return BigInteger.ZERO;
         if (n == 1) return BigInteger.ONE;
