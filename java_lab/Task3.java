@@ -1,5 +1,4 @@
 public class Task3 {
-    // Возвращает наименьшую цифру числа x
     public static int minDigit(int x) {
         if (x == 0) return 0;
 
