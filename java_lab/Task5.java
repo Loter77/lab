@@ -1,5 +1,4 @@
 public class Task5 {
-    // Возвращает строку с правильной формой слова "запись"
     public static String pluralizeRecords(int n) {
         String word;
 
