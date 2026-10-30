@@ -1,6 +1,5 @@
 public class Task8 {
 
-    // Простой калькулятор
     static class Calculator {
         public int add(int a, int b) { return a + b; }
         public int sub(int a, int b) { return a - b; }
@@ -11,7 +10,6 @@ public class Task8 {
         }
     }
 
-    // Проверка простого числа
     public static boolean isPrime(int n) {
         if (n < 2) return false;
         for (int i = 2; i * i <= n; i++) {
@@ -20,7 +18,6 @@ public class Task8 {
         return true;
     }
 
-    // Простой assert-метод своими руками
     static int testsPassed = 0;
     static int testsFailed = 0;
 
@@ -37,13 +34,11 @@ public class Task8 {
     public static void main(String[] args) {
         Calculator calc = new Calculator();
 
-        // Тесты калькулятора
         check("add(2,3) == 5", calc.add(2, 3) == 5);
         check("sub(5,3) == 2", calc.sub(5, 3) == 2);
         check("mul(3,4) == 12", calc.mul(3, 4) == 12);
         check("div(10,2) == 5", calc.div(10, 2) == 5.0);
 
-        // Деление на ноль
         boolean exceptionThrown = false;
         try {
             calc.div(5, 0);
@@ -52,7 +47,7 @@ public class Task8 {
         }
         check("div(5,0) throws", exceptionThrown);
 
-        // Тесты простых чисел (параметризованные)
+
         int[] primes = {2, 3, 5, 7, 11, 13, 97, 101};
         for (int p : primes) {
             check(p + " is prime", isPrime(p));
