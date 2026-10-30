@@ -1,7 +1,6 @@
 public class Task7 {
     private static final String ALPHABET = "абвгдеёжзийклмнопрстуфхцчшщъыьэюя";
 
-    // str — строка, shift — сдвиг, action — "encode" или "decode"
     public static String cesar(String str, int shift, String action) {
         StringBuilder result = new StringBuilder();
 
@@ -12,7 +11,6 @@ public class Task7 {
             int index = ALPHABET.indexOf(lower);
 
             if (index == -1) {
-                // Символ не в алфавите — оставляем как есть
                 result.append(ch);
             } else {
                 int newIndex;
@@ -46,8 +44,3 @@ public class Task7 {
         }
     }
 }
-
-/*
-Расшифровка сообщения "эзтыхз фзъзъз":
-При сдвиге 3 получается "вступай в ряды".
-*/
