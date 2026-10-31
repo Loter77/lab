@@ -33,9 +33,8 @@ public class Task7 {
     }
 
     public static void main(String[] args) {
-        System.out.println(cesar("привет", 3, "encode"));  // толуех
-        System.out.println(cesar("толуех", 3, "decode"));  // привет
-
+        System.out.println(cesar("привет", 3, "encode")); 
+        System.out.println(cesar("толуех", 3, "decode")); 
         // Расшифровка сообщения "эзтыхз фзъзъз"
         String encrypted = "эзтыхз фзъзъз";
         System.out.println("\nПодбор сдвига:");
